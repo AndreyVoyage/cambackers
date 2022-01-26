@@ -1,0 +1,322 @@
+body {
+  background-color: #E5E5E5;
+}
+
+.cambackers__first-header, .cambackers__subtitle, .cambackers__second-header, .cambackers__desc, .cambackers__text {
+  margin: 0;
+}
+
+.cambackers {
+  padding-top: 26px;
+  
+  font-family: 'gothampro', verdana, serif;
+  color: #0D0D0D;
+}
+
+.cambackers__container {
+  margin: 0 auto;
+  
+  display: grid;
+  grid-template-columns: 310px 440px;
+  
+  max-width: 750px;
+
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+
+.cambackers__first-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: #EFEFEF;
+
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.cambackers__img {
+  position: relative;
+}
+
+/* ПОШАГО-ВЫЙ ПЛАН */
+.cambackers__text {
+  font-weight: 900;
+  font-size: 92px;
+  line-height: 88px;
+  text-align: center;
+  position: relative;
+
+  color: #E2E2E2;
+
+  z-index: 2;
+}
+
+//img-BOOK
+.cambackers__text:before {
+  content: "";
+  
+  background: url(../../img/book.png) center no-repeat;
+  background-size: 100%;
+  width: 394px;
+  height: 337px;
+
+  position: absolute;
+  right: -34px;
+
+
+  z-index: 3;
+}
+
+//ARROW
+.cambackers__text:after {
+  content: "";
+
+  background: url(../../img/arrow.svg) center no-repeat;
+  background-size: 100%;
+  width: 120px;
+  height: 59.69px;
+
+  position: absolute;
+  right: -34px;
+
+  z-index: 4;
+}
+
+.cambackers__second-col-content {
+  padding-top: 28px;
+  padding-inline: 58px ;
+  margin-bottom: 34px;
+}
+
+/* мастер-класс? */
+.cambackers__first-header {
+  margin-bottom: 48px;
+  
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 23px;
+  text-align: center;
+}
+
+/* Скачайте пошаговый план */
+/* и познакомьтесь с этим инструментом прямо сейчас */
+.cambackers__subtitle {
+  margin-top: 0 !important;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 13px;
+  text-align: center;
+}
+
+.cambackers__subtitle--first {
+  margin-bottom: 7px;
+}
+
+.cambackers__subtitle--second {
+  margin-bottom: 15px;
+}
+
+.cambackers__subtitle b {
+  font-weight: 700;
+}
+
+/* «Как собственнику выйти из операционки» */
+.cambackers__second-header {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* 10 шагов помогут создать системный бизнес */
+/* Для получения бонуса введите email */
+.cambackers__desc { 
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 11px;
+  text-align: center;
+}
+
+.cambackers__desc--first {
+  margin-bottom: 34px;
+}
+
+.cambackers__desc--second.cambackers__desc--second {
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.cambackers__form, .cambackers__input {
+  display: flex;
+  flex-direction: column;
+}
+
+.cambackers__input {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+
+  color: #0D0D0D;
+}
+
+.form__input, .form__button {
+    min-width: 323px;
+}
+
+.form__input {
+  margin-bottom: 15px;
+  padding: 18px 16px;
+
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+
+  border: 2px solid #F3CE00;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  color: #0D0D0D;
+}
+
+.form__button:active, .form__button:focus {
+  outline: none;
+  border: none;
+}
+
+/* Скачать пошаговой план */
+.form__button {
+  padding: 16px 30px;
+  
+  position: relative;
+
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 110%;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  background: linear-gradient(92.64deg, #FF5621 29.24%, #F21313 83.67%);
+  border-radius: 4px; 
+  outline: none;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.form__button:hover {
+  background: #b80404;
+  transition: background 0.5s;
+}
+
+.form__button:active {
+  top: 3px;
+  box-shadow: 0 2px 0 #161b13;
+}
+
+@media (max-width: 768px) {
+  .cambackers {
+    padding-inline: 3vw;
+  }
+
+  .cambackers__text:before {
+    width: 117%;
+    height: 100%;
+  }
+}
+
+@media (max-width:480px) {
+  .cambackers {
+    padding-inline: 0;
+    padding-top: 0;
+    
+    background-color: #F8F9F9;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
+    overflow: hidden;
+  }
+
+  .cambackers__container {
+    grid-template-columns: 100%;
+
+    position: relative; 
+  }
+
+  .cambackers__container:before {
+    content: "";
+    position: absolute;
+
+    background: url(../../img/book.png) center no-repeat;
+    background-size: 100%;
+    z-index: 4;
+
+    width: 412px;
+    height: 384px;
+    top: -16px;
+  }
+
+  .cambackers__container:after {
+    content: "";
+    position: absolute;
+
+    background: url(../../img/arrow.svg) center no-repeat;
+    background-size: 100%;
+
+    width: 63px;
+
+    height: 96px;
+    bottom: 34px;
+  }
+
+  .cambackers__first-col {
+    background-color: #F8F9F9;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+}
+
+  .cambackers__text {
+    padding-inline: 27vw;
+    padding-block: 10vw;
+
+
+    font-size: 45px;
+    line-height: 140%;
+
+    background-image: none;
+  }
+
+  .cambackers__text:before {
+    background-image: none;
+  }
+
+  .cambackers__text:after {
+    background-image: none;
+  }
+
+  .cambackers__text:before {
+    width: 128%;
+  }
+
+  .cambackers__text:after {
+    width: 63px;
+  }
+
+  .cambackers__first-header {
+    margin-bottom: 34px; 
+  }
+
+  .cambackers__second-col-content {
+    padding-top: 14px;
+    padding-inline: 36px;
+    margin-bottom: 45px;
+  }
+}
